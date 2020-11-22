@@ -2,7 +2,7 @@ jQuery.githubUser = function(username, callback) {
     jQuery.getJSON('https://api.github.com/users/'+username+'/repos?callback=?',callback)
  }
 
-var displayRepos = ["challenges", "ansible-gitops", "Sanntid","rh_sat_prometheus_targets", "kotlin-snake","puppet-module-unbound"];
+var displayRepos = ["Master-thesis","challenges", "ansible-gitops", "Sanntid","rh_sat_prometheus_targets", "kotlin-snake","puppet-module-unbound"];
 
  jQuery.fn.loadRepositories = function(username) {
      this.html("<span>Querying GitHub for " + username +"'s repositories...</span>");
